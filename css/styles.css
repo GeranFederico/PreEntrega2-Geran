@@ -270,6 +270,35 @@ footer {
     margin-top: 10px;
 }
 
+/*Estilos Contacto*/
+.mapa {
+    margin: auto;
+    padding: 1em;
+    grid-area: mapa;
+    width: 300px;
+    height: 225px;
+}
+.contacto{
+    padding: 1em;
+    grid-area: contacto;
+}
+.formulario{
+    padding: 1em;
+    grid-area: formulario;
+}
+
+.grillaContacto{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "contacto"
+    "formulario"
+    "mapa"
+    "footer" ;
+}
+
+
 @media (min-width: 600px){
     .grilla {
         margin: 0;
@@ -463,6 +492,18 @@ footer {
         width: 250px;
         height: 250px;
     }
+
+    /*Estilos de Contacto*/
+    .grillaContacto{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: 
+        "header     header"
+        "nav        nav"
+        "contacto   mapa"
+        "formulario mapa"
+        "footer     footer";
+    }
 }
 
 @media (min-width:1024px){
@@ -538,6 +579,25 @@ footer {
         background: rgb(1,6,25);
         background: radial-gradient(circle, rgba(1,6,25,1) 21%, rgba(14,34,109,1) 41%, rgba(14,34,109,1) 54%, rgba(0,1,15,0.8533788515406162) 86%);
     }
+
+    /*Estilos de Contacto*/
+    .grillaContacto{
+        color: white;
+        background: rgb(1,6,25);
+        background: radial-gradient(circle, rgba(1,6,25,1) 21%, rgba(14,34,109,1) 41%, rgba(14,34,109,1) 54%, rgba(0,1,15,0.8533788515406162) 86%);
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas: 
+        "header     header"
+        "nav        nav"
+        "mapa       contacto"
+        "mapa       formulario"
+        "footer     footer";
+    }
+    .mapa{
+        margin-bottom: 15em;
+    }
+     
 }
 
 
