@@ -232,6 +232,44 @@ footer {
     height: 20em;
 }
 
+/*Estilos Galeria*/
+.tituloGaleria {
+    grid-area: titulo;
+}
+.galeriaGrid {
+    grid-area: galeria;
+}
+
+.grillaGaleria {
+    margin: 1em;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "titulo"
+    "galeria"
+    "footer";
+}
+
+.tituloGaleria {
+    padding: 1em;
+    font-size: 2em;
+}
+.galeriaPadre {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    justify-items: center;
+}
+
+.galeriaPadre img {
+    width: 300px;
+    height: 300px;
+    border: 5px solid blue;
+    margin-top: 10px;
+}
+
 @media (min-width: 600px){
     .grilla {
         margin: 0;
@@ -312,6 +350,18 @@ footer {
         "historia historia"
         "actualidad uniforme"
         "footer   footer";
+    }
+
+    /*Estilos de Galeria*/
+    .galeriaPadre {
+        background: rgb(1,6,25);
+        background: radial-gradient(circle, rgba(1,6,25,1) 21%, rgba(14,34,109,1) 41%, rgba(14,34,109,1) 54%, rgba(0,1,15,0.8533788515406162) 86%);
+    }
+    .galeriaPadre img {
+        border: 5px solid white;
+        margin-top: 10px;
+        width: 350px;
+        height: 350px;
     }
 }
 
@@ -396,6 +446,23 @@ footer {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 0fr 0fr 1fr 0.5fr;
     }
+
+    /*Estilos de Galeria*/
+    
+    .galeriaPadre {
+        background: none;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 10px;
+        margin: 2em;
+    }
+
+    .galeriaPadre img {
+        border: 5px solid blue;
+        margin-top: 10px;
+        width: 250px;
+        height: 250px;
+    }
 }
 
 @media (min-width:1024px){
@@ -449,6 +516,28 @@ footer {
         transform: scale(1.5);
         transition: 2s;
      }
+
+     /*Estilos de Galeria*/
+     .galeriaPadre {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        gap: 15px;
+    }
+
+    .galeriaPadre img {
+        border: 5px solid blue;
+        margin-top: 10px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .galeriaGrid {
+        background-color: rgb(208, 9, 9);
+    }
+    .galeriaPadre {
+        background: rgb(1,6,25);
+        background: radial-gradient(circle, rgba(1,6,25,1) 21%, rgba(14,34,109,1) 41%, rgba(14,34,109,1) 54%, rgba(0,1,15,0.8533788515406162) 86%);
+    }
 }
 
 
