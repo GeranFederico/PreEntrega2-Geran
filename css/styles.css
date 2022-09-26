@@ -201,6 +201,37 @@ footer {
     "footer" ;
 }
 
+/*Estilos de futbol*/
+
+.fefi {
+    grid-area: fefi;
+}
+
+.tabla {
+    grid-area: tabla;
+}
+
+.grillaFutbol {
+    margin: 1em;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "fefi"
+    "tabla"
+    "footer" ;
+}
+
+.fefi {
+    padding: 2em;
+    height: 15em;
+}
+
+.tabla {
+    padding: 2em;
+    height: 20em;
+}
+
 @media (min-width: 600px){
     .grilla {
         margin: 0;
@@ -352,6 +383,19 @@ footer {
         padding: 1em;
         height: 0;
      }
+
+    /*Estilos de futbol*/
+    .grillaFutbol {
+        margin: 1em;
+        display: grid;
+        grid-template-areas: 
+        "header      header"
+        "nav         nav"
+        "fefi     tabla"
+        "footer      footer";
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 0fr 0fr 1fr 0.5fr;
+    }
 }
 
 @media (min-width:1024px){
