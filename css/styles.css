@@ -574,6 +574,10 @@ footer {
         width: 200px;
         height: 200px;
     }
+    .galeriaPadre img:hover {
+        transform: scale(1.3);
+        transition: 2s;
+     }
 
     .galeriaGrid {
         background-color: rgb(208, 9, 9);
