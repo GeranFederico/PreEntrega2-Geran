@@ -601,7 +601,22 @@ footer {
         margin-bottom: 15em;
     }
      /*Estilos Futbol*/
+     .grillaFutbol{
+        grid-template-columns: 1fr 2fr
+     }
 
+    
+    .fefi {
+        margin: auto;
+    }
+    .tabla {
+        margin: 0;
+        padding-bottom: 2em;
+    }
+    .tabla img {
+        width: 600px;
+        height: 300px;
+    }
 }
 
 
