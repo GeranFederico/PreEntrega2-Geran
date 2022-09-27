@@ -133,6 +133,7 @@ footer {
 }
 
 .grilla {
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 2em;
     display: grid;
     grid-template-areas: 
@@ -147,13 +148,7 @@ footer {
 .portada {
     justify-content: center;
 }
- 
-.portada img {
-    width: 300px;
-    height: 250px;
-    border: 3px solid rgb(8, 32, 139);
-    margin-top: 5px;
-}
+
 
 .noticiasParrafo img {
     width: 300px;
@@ -162,6 +157,7 @@ footer {
 }
 
 .partidos img {
+    margin: auto;
     width: 370px;
     height: 130px;
     padding: 10px;
@@ -212,7 +208,7 @@ footer {
 }
 
 .grillaFutbol {
-    margin: 1em;
+    height: 100vh;
     display: grid;
     grid-template-areas:
     "header"
@@ -241,7 +237,7 @@ footer {
 }
 
 .grillaGaleria {
-    margin: 1em;
+    
     display: grid;
     grid-template-areas: 
     "header"
@@ -350,6 +346,7 @@ footer {
     }
 
     .partidos {
+        margin-top: 2em;
         padding: 1em;
     }
 
@@ -462,10 +459,12 @@ footer {
         padding: 1em;
         height: 0;
      }
+     .vs img {
+        padding-left: 2em;
+     }
 
     /*Estilos de futbol*/
     .grillaFutbol {
-        margin: 1em;
         display: grid;
         grid-template-areas: 
         "header      header"
@@ -483,7 +482,6 @@ footer {
         display: grid;
         grid-template-columns: 2fr 2fr;
         gap: 10px;
-        margin: 2em;
     }
 
     .galeriaPadre img {
@@ -597,7 +595,8 @@ footer {
     .mapa{
         margin-bottom: 15em;
     }
-     
+     /*Estilos Futbol*/
+
 }
 
 
