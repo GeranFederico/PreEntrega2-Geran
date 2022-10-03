@@ -75,7 +75,7 @@ nav ul {
     color: red;
  }
 
- .portada h2{
+ .conteiner h2{
     color: white;
     text-align: center;
     background: rgb(1,6,25);
@@ -89,9 +89,9 @@ nav ul {
  }
 
  .vs {
-    padding-left: 7em;
+    margin: auto;
     height: 15em;
-    width: 25em;
+    width: 20em;
  }
  footer {
     padding: 3em;
@@ -116,7 +116,7 @@ nav {
     grid-area: nav;
 }
 
-.portada {
+.conteiner {
     grid-area: portada;
 }
 
@@ -145,7 +145,7 @@ footer {
     "footer";
 }
 
-.portada {
+.conteiner {
     justify-content: center;
 }
 
@@ -322,7 +322,7 @@ footer {
         padding: 0.5em;
     }
 
-    .portada img {
+    .conteiner img {
         width: 550px;
         height: 350px;
         border: 6px solid rgb(8, 32, 139);
@@ -410,7 +410,7 @@ footer {
         grid-template-rows: 0fr 0fr 1fr 1fr 0.5fr;
     }
 
-    .portada img {
+    .conteiner img {
         width: 700px;
         height: 450px;
         border: 8px solid rgb(8, 32, 139);
@@ -528,7 +528,7 @@ footer {
     header {
         justify-content: flex-start;
     }
-    .portada img {
+    .conteiner img {
         width: 1000px;
         height: 500px;
         border: 10px solid rgb(8, 32, 139);
@@ -547,13 +547,10 @@ footer {
         padding-left: 8px;
     }
 
-    .vs {
-        padding-left: 3em;
-    }
 
     .vs img {
-        width: 360px;
-        height: 185px;
+        width: 220px;
+        height: 190px;
     }
 
     .efecto img:hover {
